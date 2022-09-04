@@ -109,7 +109,7 @@ void MainWindow::init()
     on_actionRefresh_triggered();
 
     this->setWindowTitle(tr("QCodec2 GUI"));
-    this->setWindowIcon(QIcon(QLatin1Literal(":/MainIcon")));
+    this->setWindowIcon(QIcon(QLatin1Literal(":/icons/MainIcon")));
 
 
     initializeStatusBar();

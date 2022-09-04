@@ -7,8 +7,9 @@
 
 #include <QtMultimedia/QAudioFormat>
 
+#include <codec2/codec2.h>
+
 #include "qcodec2shared.h"
-#include "codec2.h"
 
 class QCodec2BaseClass : public QIODevice, public QLastErrorHolder
 {

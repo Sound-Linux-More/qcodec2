@@ -30,7 +30,7 @@ qint64 QCodec2Decoder::readData(char *data, qint64 maxSize)
     int buffPtrIndex=0;
 
     //(len/2) rather than (len) allows smaller sound card buffer
-    while((buffPtrIndex+sizeof(short)*m_SamplesPerFrame)<(maxSize/2))
+    while((qint64)(buffPtrIndex+sizeof(short)*m_SamplesPerFrame) < (maxSize/2))
     {
         qint64 bytesread=m_ExternalDevice->read((char*)m_CodecsBitsBuffer, m_BytesPerFrame);
 

@@ -27,7 +27,7 @@ protected:
 public slots:
 
     //! must be called before encoding started
-    bool start(const QIODevice::OpenMode additionalFlags = 0);
+    bool start(const QIODevice::OpenMode additionalFlags = QFlag(0));
 
     //! must be called when no more encoding needed
     void stop();

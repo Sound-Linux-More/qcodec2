@@ -18,8 +18,8 @@ INCLUDEPATH *= \
     $$PWD/src/qcodec2
 
 SOURCES *= \
-    $$PWD/src/qcodec2_gui_main.cpp\
-    $$PWD/src/gui/mainwindow.cpp
+    $$PWD/src/gui/mainwindow.cpp \
+    $$PWD/src/qcodec2_gui_main.cpp
 
 HEADERS  *= \
     $$PWD/src/gui/mainwindow.h
@@ -43,3 +43,8 @@ win32 {
 
 include($$PWD/src/qcodec2/qcodec2.pri)
 
+UI_DIR  =     build
+MOC_DIR =     build
+RCC_DIR =     build
+OBJECTS_DIR = build
+mytarget.commands += $${QMAKE_MKDIR} build
